@@ -1,0 +1,49 @@
+# ============================================================
+# train_bargaining_supervised.py 配置（SL 监督学习）
+# 修改此文件即可调参；命令行显式传参时以命令行优先。
+# 示例：python train_bargaining_supervised.py --seed 20260608
+# ============================================================
+
+# 训练轮数（论文附录 30；仓库默认 50）
+epochs: 50
+# 学习率
+lr: 0.001
+
+# 训练场景
+scenarios: [intersection, chase, merge, head_on]
+
+# 议价最大轮数
+max_rounds: 3
+# 折扣类型：ttc / constant
+discount_type: ttc
+# TTC 校准折扣系数 alpha
+discount_alpha: 0.3
+# 效用类型：learned / handcrafted
+utility_type: learned
+
+# 评估场景
+eval_scenario: intersection
+# 仅评估不训练（等价于 --eval）
+eval_only: false
+# eval_only=true 时必须指向完整 SL 检查点（含 state_encoder）
+checkpoint: null
+
+# 每个 epoch 内的 episode 数
+ep_per_epoch: 5
+
+# 训练中每隔多少个 epoch 验证；best_model.pth 使用固定多种子场景集和多指标评分
+eval_interval: 10
+
+# 每个场景的验证 trial 数；验证种子与独立测试种子分离
+validation_trials: 5
+validation_seed: 20261100
+test_trials: 25
+test_seed: 20261200
+latency_budget_ms: 50.0
+
+# 数据采集模式：closed_loop = 模型闭环驱动仿真（训练-评估分布一致，缺陷①修复）；
+# open_loop = 旧行为（adjust 0,0），仅作对照
+collect_mode: closed_loop
+
+# 固定随机种子；null = 不固定（建议设如 20260608）
+seed: null

@@ -1,0 +1,12 @@
+sl_pre_608   best=8.000 final=6.000 -> best
+sl_pre_609   best=6.000 final=6.000 -> best
+sl_pre_610   best=6.000 final=6.000 -> best
+sl_fix_608   best=2.000 final=2.000 -> best
+sl_fix_609   best=6.000 final=3.000 -> best
+sl_fix_610   best=6.000 final=7.000 -> final
+rl_608       best=3.843 final=7.760 -> final
+rl_609       best=4.000 final=4.000 -> best
+rl_610       best=6.000 final=8.000 -> final
+ppo_fix_608  best=8.000 final=2.000 -> best
+ppo_fix_609  best=8.000 final=6.000 -> best
+ppo_fix_610  best=7.000 final=3.000 -> best

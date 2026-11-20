@@ -1,0 +1,698 @@
+{
+ "sl_pre_608": {
+  "kind": "sl",
+  "best_score": 8.0,
+  "final_score": 6.0,
+  "better": "best",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 3.758,
+    "avgwpd": 1.0429
+   },
+   "chase": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 3.6025
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 0.72,
+    "avgwpd": 3.2905
+   },
+   "head_on": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 2.5,
+    "avgwpd": 0.8932
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 0.374,
+    "avgwpd": 5.1669
+   },
+   "chase": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.171,
+    "avgwpd": 1.9678
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 3.7579
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.111,
+    "avgwpd": 7.1212
+   }
+  }
+ },
+ "sl_pre_609": {
+  "kind": "sl",
+  "best_score": 6.0,
+  "final_score": 6.0,
+  "better": "best",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 2.576,
+    "avgwpd": 3.5183
+   },
+   "chase": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.173,
+    "avgwpd": 0.8622
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 2.0188
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.077,
+    "avgwpd": 5.0204
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 1.92,
+    "avgwpd": 3.898
+   },
+   "chase": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.105,
+    "avgwpd": 1.2213
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 2.865
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.126,
+    "avgwpd": 5.62
+   }
+  }
+ },
+ "sl_pre_610": {
+  "kind": "sl",
+  "best_score": 6.0,
+  "final_score": 6.0,
+  "better": "best",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 0.406,
+    "avgwpd": 4.8612
+   },
+   "chase": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.214,
+    "avgwpd": 1.0871
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 2.512
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.073,
+    "avgwpd": 5.5127
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 0.211,
+    "avgwpd": 4.7647
+   },
+   "chase": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.174,
+    "avgwpd": 1.0566
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 2.4377
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.11,
+    "avgwpd": 5.4274
+   }
+  }
+ },
+ "sl_fix_608": {
+  "kind": "sl",
+  "best_score": 2.0,
+  "final_score": 2.0,
+  "better": "best",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 0.753,
+    "avgwpd": 5.0107
+   },
+   "chase": {
+    "collision": true,
+    "conv": 0.0,
+    "minttc": 0.11,
+    "avgwpd": 2.0679
+   },
+   "merge": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 100.0,
+    "avgwpd": 3.7515
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 0.0,
+    "minttc": 0.095,
+    "avgwpd": 7.1739
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 0.407,
+    "avgwpd": 4.9645
+   },
+   "chase": {
+    "collision": true,
+    "conv": 0.0,
+    "minttc": 0.12,
+    "avgwpd": 1.4969
+   },
+   "merge": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 100.0,
+    "avgwpd": 3.3319
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 0.0,
+    "minttc": 0.107,
+    "avgwpd": 6.2861
+   }
+  }
+ },
+ "sl_fix_609": {
+  "kind": "sl",
+  "best_score": 6.0,
+  "final_score": 3.0,
+  "better": "best",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 2.606,
+    "avgwpd": 3.8738
+   },
+   "chase": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.184,
+    "avgwpd": 1.1876
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 2.9851
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.082,
+    "avgwpd": 5.753
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 1.879,
+    "avgwpd": 3.9153
+   },
+   "chase": {
+    "collision": true,
+    "conv": 0.0,
+    "minttc": 0.107,
+    "avgwpd": 1.2649
+   },
+   "merge": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 100.0,
+    "avgwpd": 3.0397
+   },
+   "head_on": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 0.044,
+    "avgwpd": 7.0547
+   }
+  }
+ },
+ "sl_fix_610": {
+  "kind": "sl",
+  "best_score": 6.0,
+  "final_score": 7.0,
+  "better": "final",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 2.648,
+    "avgwpd": 3.9686
+   },
+   "chase": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.18,
+    "avgwpd": 1.336
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 3.2257
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.094,
+    "avgwpd": 6.0447
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 1.987,
+    "avgwpd": 4.2196
+   },
+   "chase": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.151,
+    "avgwpd": 2.2595
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 3.8578
+   },
+   "head_on": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 0.05,
+    "avgwpd": 8.0184
+   }
+  }
+ },
+ "rl_608": {
+  "kind": "rl",
+  "best_score": 3.843,
+  "final_score": 7.7604,
+  "better": "final",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 44.9,
+    "minttc": 1.268,
+    "avgwpd": 4.4285
+   },
+   "chase": {
+    "collision": true,
+    "conv": 43.75,
+    "minttc": 0.188,
+    "avgwpd": 1.6723
+   },
+   "merge": {
+    "collision": false,
+    "conv": 45.65,
+    "minttc": 100.0,
+    "avgwpd": 3.5614
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 50.0,
+    "minttc": 0.112,
+    "avgwpd": 6.6427
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 91.67,
+    "minttc": 3.758,
+    "avgwpd": 3.1059
+   },
+   "chase": {
+    "collision": false,
+    "conv": 97.37,
+    "minttc": 100.0,
+    "avgwpd": 3.9388
+   },
+   "merge": {
+    "collision": false,
+    "conv": 92.0,
+    "minttc": 0.57,
+    "avgwpd": 3.8156
+   },
+   "head_on": {
+    "collision": false,
+    "conv": 95.0,
+    "minttc": 2.5,
+    "avgwpd": 0.5763
+   }
+  }
+ },
+ "rl_609": {
+  "kind": "rl",
+  "best_score": 4.0,
+  "final_score": 4.0,
+  "better": "best",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 3.758,
+    "avgwpd": 3.1307
+   },
+   "chase": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 100.0,
+    "avgwpd": 3.6196
+   },
+   "merge": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 0.727,
+    "avgwpd": 3.3277
+   },
+   "head_on": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 2.5,
+    "avgwpd": 0.8525
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 3.758,
+    "avgwpd": 0.5175
+   },
+   "chase": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 100.0,
+    "avgwpd": 3.7299
+   },
+   "merge": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 0.684,
+    "avgwpd": 3.4789
+   },
+   "head_on": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 2.5,
+    "avgwpd": 0.7777
+   }
+  }
+ },
+ "rl_610": {
+  "kind": "rl",
+  "best_score": 6.0,
+  "final_score": 8.0,
+  "better": "final",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 2.425,
+    "avgwpd": 3.9695
+   },
+   "chase": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.129,
+    "avgwpd": 1.3846
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 3.2344
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.083,
+    "avgwpd": 6.0796
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 3.749,
+    "avgwpd": 1.9762
+   },
+   "chase": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 3.3018
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 0.779,
+    "avgwpd": 2.8512
+   },
+   "head_on": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 2.457,
+    "avgwpd": 1.4043
+   }
+  }
+ },
+ "ppo_fix_608": {
+  "kind": "ppo",
+  "best_score": 8.0,
+  "final_score": 2.0,
+  "better": "best",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 3.758,
+    "avgwpd": 3.6786
+   },
+   "chase": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 3.6919
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 0.699,
+    "avgwpd": 3.4554
+   },
+   "head_on": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 2.5,
+    "avgwpd": 0.7825
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 0.681,
+    "avgwpd": 4.6942
+   },
+   "chase": {
+    "collision": true,
+    "conv": 0.0,
+    "minttc": 0.147,
+    "avgwpd": 1.3369
+   },
+   "merge": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 100.0,
+    "avgwpd": 3.1744
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 0.0,
+    "minttc": 0.085,
+    "avgwpd": 6.05
+   }
+  }
+ },
+ "ppo_fix_609": {
+  "kind": "ppo",
+  "best_score": 8.0,
+  "final_score": 6.0,
+  "better": "best",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 3.758,
+    "avgwpd": 0.5794
+   },
+   "chase": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 3.5635
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 0.755,
+    "avgwpd": 3.1099
+   },
+   "head_on": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 2.5,
+    "avgwpd": 1.0485
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 2.728,
+    "avgwpd": 4.0502
+   },
+   "chase": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.141,
+    "avgwpd": 1.7201
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 3.601
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.097,
+    "avgwpd": 6.7187
+   }
+  }
+ },
+ "ppo_fix_610": {
+  "kind": "ppo",
+  "best_score": 7.0,
+  "final_score": 3.0,
+  "better": "best",
+  "best_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 0.16,
+    "avgwpd": 3.6862
+   },
+   "chase": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 9.969,
+    "avgwpd": 0.5376
+   },
+   "merge": {
+    "collision": false,
+    "conv": 100.0,
+    "minttc": 100.0,
+    "avgwpd": 1.0408
+   },
+   "head_on": {
+    "collision": true,
+    "conv": 100.0,
+    "minttc": 0.148,
+    "avgwpd": 4.745
+   }
+  },
+  "final_detail": {
+   "intersection": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 0.239,
+    "avgwpd": 5.2785
+   },
+   "chase": {
+    "collision": true,
+    "conv": 0.0,
+    "minttc": 0.09,
+    "avgwpd": 2.2655
+   },
+   "merge": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 100.0,
+    "avgwpd": 3.8286
+   },
+   "head_on": {
+    "collision": false,
+    "conv": 0.0,
+    "minttc": 0.062,
+    "avgwpd": 7.9922
+   }
+  }
+ }
+}

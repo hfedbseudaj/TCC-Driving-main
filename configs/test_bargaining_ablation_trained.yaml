@@ -1,0 +1,26 @@
+# ============================================================
+# test_bargaining_ablation_trained.py 配置（训练后消融复测）
+# 修改此文件即可调参；命令行显式传参时以命令行优先。
+# 示例：python test_bargaining_ablation_trained.py --checkpoint <path>
+# ============================================================
+
+# checkpoint 路径；null = 自动找最新训练结果
+checkpoint: null
+
+# 每 episode 最大步数
+steps: 60
+
+# 场景列表；null = 全部场景
+scenarios: null
+
+# 每场景 trial 数
+trials: 1
+
+# 配对场景扰动的公共随机种子（不同模型共享同一场景种子）
+scene_seed: 20261100
+
+# 检查点对应的训练随机种子；null = 从完整 SL 检查点读取
+training_seed: null
+
+# 是否与 baseline 对比输出（等价于 --compare）
+compare: false

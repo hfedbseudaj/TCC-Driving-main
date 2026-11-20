@@ -1,0 +1,572 @@
+{
+  "ppo_608": {
+    "variant_hits": [
+      {
+        "name": "TTC + 3 rounds + a=0.3 (baseline)",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "Constant + 3 rounds + a=0.3",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "constant",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 50,
+        "total_trials": 100,
+        "collision_pct": 50.0
+      },
+      {
+        "name": "TTC + 1 round + a=0.3",
+        "config": {
+          "max_rounds": 1,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 50,
+        "total_trials": 100,
+        "collision_pct": 50.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=0.1",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.1,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 50,
+        "total_trials": 100,
+        "collision_pct": 50.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=1.0",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 1.0,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 50,
+        "total_trials": 100,
+        "collision_pct": 50.0
+      }
+    ],
+    "seed": 20260608
+  },
+  "ppo_609": {
+    "variant_hits": [
+      {
+        "name": "TTC + 3 rounds + a=0.3 (baseline)",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "Constant + 3 rounds + a=0.3",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "constant",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "TTC + 1 round + a=0.3",
+        "config": {
+          "max_rounds": 1,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 50,
+        "total_trials": 100,
+        "collision_pct": 50.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=0.1",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.1,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 50,
+        "total_trials": 100,
+        "collision_pct": 50.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=1.0",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 1.0,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      }
+    ],
+    "seed": 20260609
+  },
+  "ppo_610": {
+    "variant_hits": [
+      {
+        "name": "TTC + 3 rounds + a=0.3 (baseline)",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 25,
+        "total_trials": 100,
+        "collision_pct": 25.0
+      },
+      {
+        "name": "Constant + 3 rounds + a=0.3",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "constant",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "TTC + 1 round + a=0.3",
+        "config": {
+          "max_rounds": 1,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=0.1",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.1,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=1.0",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 1.0,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 25,
+        "total_trials": 100,
+        "collision_pct": 25.0
+      }
+    ],
+    "seed": 20260610
+  },
+  "rl_608": {
+    "variant_hits": [
+      {
+        "name": "TTC + 3 rounds + a=0.3 (baseline)",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "Constant + 3 rounds + a=0.3",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "constant",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 50,
+        "total_trials": 100,
+        "collision_pct": 50.0
+      },
+      {
+        "name": "TTC + 1 round + a=0.3",
+        "config": {
+          "max_rounds": 1,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=0.1",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.1,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 50,
+        "total_trials": 100,
+        "collision_pct": 50.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=1.0",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 1.0,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      }
+    ],
+    "seed": 20260608
+  },
+  "rl_609": {
+    "variant_hits": [
+      {
+        "name": "TTC + 3 rounds + a=0.3 (baseline)",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "Constant + 3 rounds + a=0.3",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "constant",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 25,
+        "total_trials": 100,
+        "collision_pct": 25.0
+      },
+      {
+        "name": "TTC + 1 round + a=0.3",
+        "config": {
+          "max_rounds": 1,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 50,
+        "total_trials": 100,
+        "collision_pct": 50.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=0.1",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.1,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 25,
+        "total_trials": 100,
+        "collision_pct": 25.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=1.0",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 1.0,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 25
+        },
+        "total_collisions": 50,
+        "total_trials": 100,
+        "collision_pct": 50.0
+      }
+    ],
+    "seed": 20260609
+  },
+  "rl_610": {
+    "variant_hits": [
+      {
+        "name": "TTC + 3 rounds + a=0.3 (baseline)",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 25,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 25,
+        "total_trials": 100,
+        "collision_pct": 25.0
+      },
+      {
+        "name": "Constant + 3 rounds + a=0.3",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "constant",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "TTC + 1 round + a=0.3",
+        "config": {
+          "max_rounds": 1,
+          "discount_type": "ttc",
+          "discount_alpha": 0.3,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=0.1",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 0.1,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      },
+      {
+        "name": "TTC + 3 rounds + a=1.0",
+        "config": {
+          "max_rounds": 3,
+          "discount_type": "ttc",
+          "discount_alpha": 1.0,
+          "utility_type": "learned"
+        },
+        "collisions": {
+          "intersection": 0,
+          "chase": 0,
+          "merge": 0,
+          "head_on": 0
+        },
+        "total_collisions": 0,
+        "total_trials": 100,
+        "collision_pct": 0.0
+      }
+    ],
+    "seed": 20260610
+  }
+}

@@ -1,0 +1,42 @@
+# ============================================================
+# eval_ppo_kinematic.py 配置（PPO 权重表 4 复测）
+# 修改此文件即可调参；命令行显式传参时以命令行优先。
+# 示例：python eval_ppo_kinematic.py --checkpoint <path> --trials 25
+# ============================================================
+
+# 待评估的 PPO checkpoint 路径；null = 必须用 --checkpoint 指定
+checkpoint: null
+
+# 每个场景/变体的 trial 数（论文表 4 用 25）
+trials: 25
+
+# 随机种子（trial 扰动）
+seed: 20260608
+
+# 表 4 实验矩阵：变体列表（max_rounds / discount_type / discount_alpha / utility_type）
+variants:
+  - name: "TTC + 3 rounds + a=0.3 (baseline)"
+    max_rounds: 3
+    discount_type: ttc
+    discount_alpha: 0.3
+    utility_type: learned
+  - name: "Constant + 3 rounds + a=0.3"
+    max_rounds: 3
+    discount_type: constant
+    discount_alpha: 0.3
+    utility_type: learned
+  - name: "TTC + 1 round + a=0.3"
+    max_rounds: 1
+    discount_type: ttc
+    discount_alpha: 0.3
+    utility_type: learned
+  - name: "TTC + 3 rounds + a=0.1"
+    max_rounds: 3
+    discount_type: ttc
+    discount_alpha: 0.1
+    utility_type: learned
+  - name: "TTC + 3 rounds + a=1.0"
+    max_rounds: 3
+    discount_type: ttc
+    discount_alpha: 1.0
+    utility_type: learned
