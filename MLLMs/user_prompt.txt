@@ -1,1 +1,0 @@
-The input is: {'navigation instruction': '{command}', 'speed': '{speed}m/s', 'communication suggestion': [{comm nav}][{comm speed}]}
