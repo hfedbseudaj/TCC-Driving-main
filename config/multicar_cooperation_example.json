@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "mode": "constructed_example",
+  "provenance": {
+    "kind": "manually_constructed_teaching_example",
+    "parameter_source": "hand_chosen_for_formula_and_interface_checks",
+    "calibrated_from_data": false,
+    "empirical_result": false,
+    "notes": [
+      "All numbers in this file are constructed examples, not fitted driving parameters or paper measurements.",
+      "The A--B contract is selected by the new SPE-share crossing decoder; the B--C contract is inserted manually and does not come from the archived learned-offer code.",
+      "The straight-ray, point-zone occupancy model is a limited kinematic illustration, not vehicle-envelope collision checking or closed-loop simulation."
+    ]
+  },
+  "seeds": {
+    "train_seed": null,
+    "trial_seed": 20261120
+  },
+  "physics": {
+    "dt_s": 0.1,
+    "horizon_s": 15.0,
+    "clearance_s": 0.2
+  },
+  "vehicles": [
+    {
+      "id": "A",
+      "start_xy": [-15.0, 0.0],
+      "direction_xy": [1.0, 0.0],
+      "distance_to_entry_m": 15.0,
+      "speed_mps": 5.0,
+      "zone_length_m": 13.0,
+      "max_accel_mps2": 2.0,
+      "max_brake_mps2": 2.0,
+      "max_speed_mps": 7.0,
+      "min_entry_s": 0.0,
+      "max_entry_s": 12.0
+    },
+    {
+      "id": "B",
+      "start_xy": [0.0, -15.0],
+      "direction_xy": [0.0, 1.0],
+      "distance_to_entry_m": 15.0,
+      "speed_mps": 5.0,
+      "zone_length_m": 10.0,
+      "max_accel_mps2": 2.0,
+      "max_brake_mps2": 2.0,
+      "max_speed_mps": 7.0,
+      "min_entry_s": 0.0,
+      "max_entry_s": 12.0
+    },
+    {
+      "id": "C",
+      "start_xy": [-20.0, 2.0],
+      "direction_xy": [1.0, 0.0],
+      "distance_to_entry_m": 20.0,
+      "speed_mps": 5.0,
+      "zone_length_m": 10.0,
+      "max_accel_mps2": 2.0,
+      "max_brake_mps2": 2.0,
+      "max_speed_mps": 7.0,
+      "min_entry_s": 0.0,
+      "max_entry_s": 12.0
+    }
+  ],
+  "bargaining": {
+    "discount_alpha_s_inv": {
+      "A": 0.2,
+      "B": 0.2,
+      "C": 0.2
+    },
+    "delta_bounds": [0.05, 0.99],
+    "eta_s": 1.0,
+    "welfare_epsilon_s": 1.0,
+    "t_ref_s": 1.0,
+    "max_joint_combinations": 100000
+  },
+  "pair_proposals": [
+    {
+      "id": "AB_decoded_from_SPE_share",
+      "edge": ["A", "B"],
+      "source": "rubinstein_share_decoder",
+      "disagreement_entry_s": {
+        "A": 10.2,
+        "B": 8.0
+      },
+      "tolerance_s": {
+        "A": 0.1,
+        "B": 0.1
+      },
+      "candidates": [
+        {
+          "id": "AB_A_first",
+          "entry_s": {
+            "A": 3.0,
+            "B": 5.8
+          }
+        },
+        {
+          "id": "AB_B_first",
+          "entry_s": {
+            "A": 5.2,
+            "B": 3.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "BC_hand_constructed",
+      "edge": ["B", "C"],
+      "source": "manual_constructed_contract",
+      "reference_entry_s": {
+        "B": 7.0,
+        "C": 4.0
+      },
+      "tolerance_s": {
+        "B": 0.1,
+        "C": 0.1
+      }
+    }
+  ],
+  "three_car_candidates": {
+    "A": [3.0, 5.2, 6.0],
+    "B": [3.0, 5.8, 6.4, 7.0, 8.0],
+    "C": [4.0, 6.5, 9.2]
+  }
+}

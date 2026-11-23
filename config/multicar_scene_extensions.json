@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "new_provisional_E5_definitions_not_original_paper_parameters",
+  "scenes": ["chase", "merge", "head_on"],
+  "vehicle_counts": [2, 3, 4],
+  "trial_seeds": [101, 102, 103, 104, 105, 106, 107, 108, 109, 110],
+  "discount_alpha_per_s": 0.2,
+  "near_optimal_surplus_eta_m": 4.0,
+  "welfare_tolerance_m": 5.0,
+  "physical_model": {
+    "horizon_s": 6.0,
+    "dt_s": 0.1,
+    "following_min_bumper_gap_m": 5.0,
+    "merge_and_head_on_min_swept_center_distance_m": 2.2,
+    "lateral_shift_duration_s": 3.0,
+    "lateral_profile": "quintic_smoothstep_without_lateral_acceleration_limit",
+    "trace_source": "new_three_scene_definitions_in_cooperation.scene_extensions"
+  },
+  "interpretation": "Separate per-scene finite-candidate research checks. Do not average welfare or contract distance across scenes, or claim original-code equivalence."
+}

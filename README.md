@@ -12,7 +12,7 @@ delta = 1 - exp(-alpha * TTC)
 
 The bargaining layer predicts and evaluates trajectory offers, executes a differentiable alternating-offers protocol, and converts the agreed offer into local waypoint or motion adjustments.
 
-This GitHub release contains the core pairwise bargaining implementation, training and ablation scripts, cooperative perception/planning code, and the CARLA integration path. Exploratory N-player coalition experiments and large generated artifacts are intentionally maintained outside this release.
+This repository contains the core pairwise bargaining implementation, training and ablation scripts, cooperative perception/planning code, and the CARLA integration path. It also contains an opt-in, deterministic crossing-scene prototype for the new multi-vehicle cooperation research plan. That prototype is separate from the trained bargaining and CARLA execution paths.
 
 ## Quick Start
 
@@ -36,6 +36,8 @@ ignored by Git. It does not require CARLA or pretrained checkpoints.
 ```text
 .
 ├── common/                 Shared utilities
+├── cooperation/            Opt-in multi-vehicle crossing-contract prototype
+├── config/                 Constructed cooperation example configuration
 ├── codriving/              Co-driving models, data utilities, and losses
 ├── opencood/               Cooperative perception and planning framework
 │   └── models/comm_modules/
@@ -98,6 +100,21 @@ python test_bargaining_ablation_trained.py --compare
 
 Typical metrics include collision rate, convergence rate, utility consistency, minimum distance, delay, intervention magnitude, and offer loss.
 
+### Multi-vehicle cooperation prototype
+
+The new research-plan implementation starts from the paper's two-car TTC discount and closed-form Rubinstein surplus share. For the crossing scene, it decodes that share into a reachable pair trajectory contract, then checks whether contracts on multiple conflict edges can be jointly satisfied. If they cannot, it selects a plan by a documented finite-candidate repair order. The package now also contains a read-only archived-model audit, an explicit old-offer adapter, paired kinematic closed-loop trials, and provisional scene-specific definitions for following, merging, and head-on approach.
+
+```powershell
+python -m cooperation.run_snapshot --allow-constructed-example
+python -m cooperation.archived_audit --max-steps 80
+python -m cooperation.run_paired_closed_loop --allow-constructed-example
+python -m cooperation.run_adapter_audit --allow-constructed-example
+python -m cooperation.run_scene_extensions
+python -m unittest tests.test_multicar_cooperation
+```
+
+The bundled configuration contains **constructed teaching numbers**, including one manually specified second-edge contract. Snapshot, paired-loop, adapter, and scene-extension results under `Result/` must be read with their manifests: they do not establish trained-policy superiority, CARLA safety, or reproduction of the paper's multi-car collision rate. See [cooperation/README.md](cooperation/README.md) for definitions and the [2026-11-20 experiment report](cooperation/EXPERIMENT_REPORT_2026-11-20.md) for completed runs, failures, and remaining work.
+
 ## Installation
 
 The original CoLMDriver stack uses a Python 3.7 environment. Select CUDA and PyTorch versions according to the target machine and CARLA installation.
@@ -135,12 +152,12 @@ python launch_closed_loop_suite.py --variant suite --carla-port 2000 --dry-run
 
 The public release intentionally excludes:
 
-- N-player coalition and hypergraph aggregation experiments.
+- Complete N-player coalition and hypergraph aggregation experiments.
 - `Result/` outputs, checkpoints, local caches, and generated frames.
 - CARLA binary distributions.
 - Python bytecode, logs, temporary files, and compiled artifacts.
 
-The release should therefore be interpreted as a compact core implementation of TTC-calibrated pairwise bargaining integrated with cooperative driving. It does not claim to solve a complete N-player dynamic game.
+The release should therefore be interpreted as a compact core implementation of TTC-calibrated pairwise bargaining integrated with cooperative driving, plus a separate crossing-scene research prototype. It does not claim to solve a complete N-player dynamic game.
 
 The CARLA code still contains the original cooperative driving data and
 multi-vehicle execution interfaces inherited from CoLMDriver. These are

@@ -267,7 +267,7 @@ class RubinsteinBargaining(nn.Module):
             f"got shape {tuple(spatial_features.shape)}.")
     
     def forward(self, spatial_features, waypoints, positions, velocities, headings, record_len,
-                initial_offers=None):
+                initial_offers=None, record_pair_trace=False):
         B = record_len.shape[0]
         device = spatial_features.device
         bargaining_states, input_mode = self.encode_states(spatial_features)
@@ -333,6 +333,7 @@ class RubinsteinBargaining(nn.Module):
                     vel,
                     hdg,
                     initial_offers=init_off,
+                    record_pair_trace=record_pair_trace,
                 )
                 agreed_off = pairwise_output['bargaining_offers']
                 accept = pairwise_output['acceptance_mask']

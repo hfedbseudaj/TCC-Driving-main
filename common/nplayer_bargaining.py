@@ -22,6 +22,7 @@ def sequential_pairwise_bargaining(
     velocities: Tensor,
     headings: Tensor,
     initial_offers: Tensor | None = None,
+    record_pair_trace: bool = False,
 ) -> Dict[str, Any]:
     """Run the model's two-agent bargaining protocol sequentially over N agents.
 
@@ -32,6 +33,9 @@ def sequential_pairwise_bargaining(
         positions: Per-agent positions with shape ``(N,2)``.
         velocities: Per-agent velocity vectors with shape ``(N,2)``.
         headings: Per-agent heading angles with shape ``(N,)``.
+        record_pair_trace: Include detached per-edge offers, discounts and
+            physical waypoint adjustments for an E0 diagnostic run. This has
+            no effect on the negotiated actions and is off by default.
 
     Returns:
         A dictionary parallel to the legacy module output, plus the ordered
@@ -112,14 +116,20 @@ def sequential_pairwise_bargaining(
         pair_weight = 1.0 / pair_ttc[0, 1].clamp_min(1e-3)
         adjustment_terms[first].append((pair_adjustments[0], pair_weight))
         adjustment_terms[second].append((pair_adjustments[1], pair_weight))
-        pair_records.append({
+        pair_record = {
             "agents": [first, second],
             "ttc_s": ttc_value,
             "priority_weight_1_over_ttc": float(pair_weight.detach().cpu()),
             "rounds": int(pair_meta["n_rounds"]),
             "converged": bool(pair_meta["converged"]),
             "accepted": [bool(pair_acceptance[0]), bool(pair_acceptance[1])],
-        })
+        }
+        if record_pair_trace:
+            pair_record["input_offers"] = pair_offers.detach().cpu().tolist()
+            pair_record["discount_factors"] = pair_discount.detach().cpu().tolist()
+            pair_record["negotiated_offers"] = negotiated_offers.detach().cpu().tolist()
+            pair_record["waypoint_adjustments"] = pair_adjustments.detach().cpu().tolist()
+        pair_records.append(pair_record)
 
     final_offers = torch.stack(current_offers, dim=0)
     initial_adjustments = (
@@ -152,6 +162,17 @@ def sequential_pairwise_bargaining(
         "pair_count": len(pair_records),
         "pair_schedule": pair_records,
     }
+    if record_pair_trace:
+        metadata["trace"] = {
+            "positions": positions.detach().cpu().tolist(),
+            "velocities": velocities.detach().cpu().tolist(),
+            "headings": headings.detach().cpu().tolist(),
+            "initial_offers": initial_offers.detach().cpu().tolist(),
+            "original_waypoints": waypoints.detach().cpu().tolist(),
+            "final_offers": final_offers.detach().cpu().tolist(),
+            "weighted_waypoint_adjustments": final_adjustments.detach().cpu().tolist(),
+            "adjusted_waypoints": adjusted_waypoints.detach().cpu().tolist(),
+        }
     with torch.no_grad():
         weights = model.utility_estimator(states, final_offers)
 
